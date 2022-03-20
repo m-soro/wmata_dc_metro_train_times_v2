@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+# WMATA D.C. Metro train arrival times
 
-You can use the [editor on GitHub](https://github.com/m-soro/wmata_dc_metro_train_times_v2/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+A python executable that returns Washington Metropolitan Area Transit Authority(WMATA) train arrival times.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![image](files/demo.gif)
 
-### Markdown
+[See the source code](https://github.com/m-soro/wmata_dc_metro_train_times_v2/blob/main/metro)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+---
 
-```markdown
-Syntax highlighted code block
+The WMATA developer website provides a free API.
 
-# Header 1
-## Header 2
-### Header 3
+[![image](files/wmatadevapi.png)](https://developer.wmata.com/)
 
-- Bulleted
-- List
+*Default tier sufficient for most casual developers. Rate limited to 10 calls/second and 50,000 calls per day*
 
-1. Numbered
-2. List
+---
 
-**Bold** and _Italic_ and `Code` text
+### Steps to run python scripts like any terminal commands.
 
-[Link](url) and ![Image](src)
-```
+To make your script executable, add the script's path to your .bash_profile.
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+1. `open -e .bash_profile` this opens your .bash_profile in your      TextEdit app.
 
-### Jekyll Themes
+2. Add the path at the end of .bash_profile. *Here's mine*:
+  ![image](files/exe.png)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/m-soro/wmata_dc_metro_train_times_v2/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+3. Restart your terminal.
 
-### Support or Contact
+4. Add this at the top of script:
+    `#!/usr/bin/env python`
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+5. Change the script to an executable:
+    `chmod +x [your python script]`
+
+6. Run the script in terminal using just the filename.
