@@ -1,5 +1,7 @@
 # WMATA D.C. Metro train arrival times
 
+![image](files/dc_metro.jpeg)
+
 A python executable that returns Washington Metropolitan Area Transit Authority(WMATA) train arrival times.
 
 ![image](files/demo.gif)
