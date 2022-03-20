@@ -2,7 +2,7 @@
 
 import http.client, urllib.request, urllib.parse, urllib.error, base64
 from datetime import datetime, timedelta
-from config import wmata_api_key, tablefmt, single_stn
+from config import wmata_api_key, tablefmt
 from wmata_station_codes import wmata_station_codes
 import json
 import requests
