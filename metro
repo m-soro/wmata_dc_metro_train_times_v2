@@ -1,0 +1,41 @@
+#!/usr/bin/env python
+import http.client, urllib.request, urllib.parse, urllib.error, base64
+from datetime import datetime, timedelta
+from config import wmata_api_key, tablefmt
+from wmata_station_codes import wmata_station_codes
+import json
+import requests
+import pandas as pd
+import tabulate
+
+def get_train_times():
+    try:
+        # Get station input, if station is unique can be just a few letters
+        # if station has similar name - it has to be typed out
+        station_query = input(" Which metro station?  ").title()
+        station = [val for key, val in wmata_station_codes.items() if station_query in key][0]
+        # Initiate API call
+        headers = {'api_key': wmata_api_key}
+        params = urllib.parse.urlencode({})
+        conn = http.client.HTTPSConnection('api.wmata.com')
+        conn.request("GET", "/StationPrediction.svc/json/GetPrediction/"+ station +"?%s" % params, "{body}", headers)
+        response = conn.getresponse()
+        data = response.read()
+        jsondata = json.loads(data.decode('utf-8'))
+        # print(json.dumps(jsondata,indent=2,sort_keys=True))
+        print("\nReturning arrival times for\n***",jsondata['Trains'][0]['LocationName'],"***\n")
+        conn.close()
+        # Convert the jsondata to a pandas dataframe
+        df = pd.DataFrame(jsondata['Trains'])
+        df = df.drop(['Car','Destination','DestinationCode','Group','LocationCode','LocationName'], axis=1)
+        df = df.sort_values('DestinationName')
+        df['ArrivalTime'] = [(datetime.now() + timedelta(minutes=int(n))).strftime("%I:%M %p")
+                                                        if n.isdigit() else n for n in df['Min']]
+        df.set_index('DestinationName', inplace=True)
+        print(tabulate.tabulate(df, tablefmt=tablefmt, showindex=True, headers="keys"),'\n')
+    except IndexError:
+        print('Station data not found: \n--> Check station spelling or WMATA operating hours')
+    except Exception:
+        print('Station data not found')
+
+get_train_times()
