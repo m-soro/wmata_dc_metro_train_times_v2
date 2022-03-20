@@ -19,7 +19,7 @@ There are two variables that are imported from this file.
 ![image](files/config.png)
 
 1. `wmata_api_key` - get this from [wmata developer website](https://developer.wmata.com/)
-2. `tablefmt` - select from: 'pretty', 'grid', 'simple', 'fancy_grid' or take a look at [tabulate](https://pypi.org/project/tabulate/) website for supported table styles. I think the four above works well.
+2. `tablefmt` - select from: 'pretty', 'grid', 'simple', 'fancy_grid' or take a look at [tabulate](https://pypi.org/project/tabulate/) website for supported table styles. I think the four above work well.
 
 ---
 
