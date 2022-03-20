@@ -2,7 +2,7 @@
 
 A python executable that returns Washington Metropolitan Area Transit Authority(WMATA) train arrival times.
 
-![image](https://github.com/m-soro/wmata_dc_metro_train_times_v2/tree/main/files/demo.gif)
+[image](https://raw.githubusercontent.com/m-soro/wmata_dc_metro_train_times_v2/main/files/demo.gif)
 
 [See the source code](https://github.com/m-soro/wmata_dc_metro_train_times_v2/blob/main/metro)
 
