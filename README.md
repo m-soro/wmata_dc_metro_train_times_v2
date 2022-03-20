@@ -6,7 +6,21 @@ A python executable that returns Washington Metropolitan Area Transit Authority(
 
 ![image](files/demo.gif)
 
-[See the source code](https://github.com/m-soro/wmata_dc_metro_train_times_v2/blob/main/metro)
+[View the source code](https://github.com/m-soro/wmata_dc_metro_train_times_v2/blob/main/metro)
+
+[Download the project](https://github.com/m-soro/wmata_dc_metro_train_times_v2/archive/refs/heads/main.zip)
+
+---
+
+**Note that you have create a `config.py` file.**
+
+There are two variables that are imported from this file.
+
+![image](files/config.png)
+
+1. `wmata_api_key` - [wmata developer website](https://developer.wmata.com/)
+2. `tablefmt` - select from: 'pretty','grid','simple','fancy_grid' or take a look at [tabulate](https://pypi.org/project/tabulate/) website for supported table styles. I think the four above works well.
+
 
 ---
 
