@@ -12,7 +12,7 @@ A python executable that returns Washington Metropolitan Area Transit Authority(
 
 ---
 
-**Note that you have create a `config.py` file.**
+**Note that you have to create a `config.py` file.**
 
 There are two variables that are imported from this file.
 
