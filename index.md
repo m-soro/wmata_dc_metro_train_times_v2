@@ -16,7 +16,7 @@ A python executable that returns Washington Metropolitan Area Transit Authority(
 
 There are two variables that are imported from this file.
 
-![image](https://raw.githubusercontent.com/m-soro/wmata_dc_metro_train_times_v2/main/files/onfig.png)
+![image](https://raw.githubusercontent.com/m-soro/wmata_dc_metro_train_times_v2/main/files/config.png)
 
 1. `wmata_api_key` - get this from [wmata developer website](https://developer.wmata.com/)
 2. `tablefmt` - select from: 'pretty', 'grid', 'simple', 'fancy_grid' or take a look at [tabulate](https://pypi.org/project/tabulate/) website for supported table styles. I think the four above works well.
