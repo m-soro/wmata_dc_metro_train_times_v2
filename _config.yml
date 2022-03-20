@@ -2,5 +2,5 @@ theme: jekyll-theme-minimal
 title: WMATA Metro Train Arrivals
 logo: https://i0.wp.com/www.sainteldaily.com/wp-content/uploads/2010/02/discoball-e1497290968568.png?fit=407%2C400&ssl=1
 description: Easily get arrival times of 91 Terminal locations of WMATA Metro Rail in command line.
-show_downloads: true
+show_downloads: false
 google_analytics: G-K81ZKBJ7M2
