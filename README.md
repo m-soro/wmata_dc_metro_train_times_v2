@@ -4,22 +4,33 @@ A python executable that returns Washington Metropolitan Area Transit Authority(
 
 ![image](files/demo.gif)
 
+[See the source code](https://github.com/m-soro/wmata_dc_metro_train_times_v2/blob/main/metro)
 
-### Run python scripts like any terminal commands.
+---
 
-1. To make your script executable, add the script's path to your .bash_profile.
+The WMATA developer website provides a free API.
 
-  1.1. `open -e .bash_profile` this opens your .bash_profile in your      TextEdit app.
+[![image](files/wmatadevapi.png)](https://developer.wmata.com/)
 
-  1.2. Add the path at the end of .bash_profile. *Here's mine*:
+*Default tier sufficient for most casual developers. Rate limited to 10 calls/second and 50,000 calls per day*
+
+---
+
+### Steps to run python scripts like any terminal commands.
+
+To make your script executable, add the script's path to your .bash_profile.
+
+1. `open -e .bash_profile` this opens your .bash_profile in your      TextEdit app.
+
+2. Add the path at the end of .bash_profile. *Here's mine*:
   ![image](files/exe.png)
 
-  1.3. Restart your terminal.
+3. Restart your terminal.
 
-2. Change file type to an executable:
-
-    2.1 Add this at the top of script:
+4. Add this at the top of script:
     `#!/usr/bin/env python`
 
-    2.2. Change the script to an executable:
+5. Change the script to an executable:
     `chmod +x [your python script]`
+
+6. Run the script in terminal using just the filename.
