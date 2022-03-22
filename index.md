@@ -1,10 +1,10 @@
-# WMATA Metro Train Arrivals
+<h1 class="animate__animated animate__fadeIn"> WMATA Metro Train Arrivals </h1>
 
 ![image](https://raw.githubusercontent.com/m-soro/wmata_dc_metro_train_times_v2/main/files/dc_metro_art.PNG)
 
 A python executable that returns Washington Metropolitan Area Transit Authority(WMATA) train arrival times.
 
-<div class="animate__animated animate__fadeInLeftBig"><img src="https://raw.githubusercontent.com/m-soro/wmata_dc_metro_train_times_v2/main/files/demo.gif" alt="demo"></div>
+<div class="animate__animated animate__animate__fadeInDown"><img src="https://raw.githubusercontent.com/m-soro/wmata_dc_metro_train_times_v2/main/files/demo.gif" alt="demo"></div>
 
 [View the source code](https://github.com/m-soro/wmata_dc_metro_train_times_v2/blob/main/metro)
 
