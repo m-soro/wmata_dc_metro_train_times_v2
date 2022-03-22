@@ -1,4 +1,4 @@
-# WMATA Metro Train Arrivals
+## WMATA Metro Train Arrivals
 
 ![image](https://raw.githubusercontent.com/m-soro/wmata_dc_metro_train_times_v2/main/files/dc_metro_art.PNG)
 
