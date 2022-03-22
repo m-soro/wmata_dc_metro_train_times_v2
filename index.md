@@ -8,6 +8,8 @@ A python executable that returns Washington Metropolitan Area Transit Authority(
 
 [View the source code](https://github.com/m-soro/wmata_dc_metro_train_times_v2/blob/main/metro)
 
+[View real time arrivals from WMATA](https://www.wmata.com/schedules/next-arrival/)
+
 [Download the project](https://github.com/m-soro/wmata_dc_metro_train_times_v2/archive/refs/heads/main.zip)
 
 ---
