@@ -11,4 +11,4 @@ const options = {}
 
 const myObserver = new IntersectionObserver(callback, options)
 
-myObserver.observe(document.querySelector("div.picture2"))
+myObserver.observe(document.querySelector(".demo"))
