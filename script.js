@@ -1,8 +1,11 @@
+const element = document.querySelector(".demo");
+element.style.visibility = "visible";
+
 const callback = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       console.log(entry)
-      entry.target.classList.add('animate__animated','animate__fadeIn')
+      entry.target.classList.add('animate__animated','animate__fadeIn','animate__slower')
     }
   })
 }
