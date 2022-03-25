@@ -1,5 +1,3 @@
-const element = document.querySelector(".demo");
-element.style.visibility = "visible";
 
 const callback = (entries, observer) => {
   entries.forEach((entry) => {
