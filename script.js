@@ -1,15 +1,16 @@
+const element = document.querySelector('.demo')
 
 const callback = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      console.log(entry)
-      entry.target.classList.add('animate__animated','animate__fadeIn','animate__slower')
+      console.log('Element is entering the screen',entry)
+      element.style.visibility = "visible"
+      entry.target.classList.add('animate__animated','animate__fadeIn', 'animate__slow')
+         
     }
   })
 }
 
-const options = {}
+const myObserver = new IntersectionObserver(callback, {threshold: 0.0000001})
 
-const myObserver = new IntersectionObserver(callback, options)
-
-myObserver.observe(document.querySelector(".demo"))
+myObserver.observe(element)
