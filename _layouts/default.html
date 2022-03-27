@@ -11,7 +11,16 @@
     <meta property='og:description' content='Easily get arrival times of 91 terminal locations of WMATA Metro Rail in command line. Made with Python and an API from WMATA.'/>
     <meta property='og:url' content='https://m-soro.github.io/wmata_dc_metro_train_times_v2'/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    
     <script src='script.js' defer></script>
+    <style> 
+      .demo   { visibility: hidden; }
+      .center { display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+              }       
+    </style>
 
     
 {% seo %}
@@ -27,7 +36,7 @@
         <div class="animate__animated animate__fadeInDown"><h1><a href='/'>WMATA Metro Train Arrivals</a></h1></div>
 
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
+          <img src="{{site.logo | relative_url}}" alt="Logo" class="center"/>
         {% endif %}
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
