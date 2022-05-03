@@ -27,7 +27,7 @@ There are two variables that are imported from this file.
 
 The WMATA developer website provides a free API.
 
-[![image](https://raw.githubusercontent.com/m-soro/wmata_dc_metro_train_times_v2/main/files/wmatadevapi.png)](https://developer.wmata.com/)
+<div class="anim"><img src="https://raw.githubusercontent.com/m-soro/wmata_dc_metro_train_times_v2/main/files/wmatadevapi.png" alt="wmata developer website"></div>
 
 *Default tier sufficient for most casual developers. Rate limited to 10 calls/second and 50,000 calls per day*
 
