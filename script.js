@@ -7,7 +7,7 @@ const callback = (entries, observer) => {
       for (const pic of imglist) { 
          pic.style.visibility = "visible"
         }
-      entry.target.classList.add('animate__animated','animate__fadeIn')
+      entry.target.classList.add('animate__animated','animate__fadeIn', 'animate__slow')
          
     }
   })
